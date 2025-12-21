@@ -1,22 +1,16 @@
-# app.py
-
 import streamlit as st
 from agent import agent_executor
 
-# تعديل إعدادات الصفحة
 st.set_page_config(page_title="C++ Tutorial Assistant", page_icon="💻")
 st.title("💻 C++ Smart Assistant")
 
-# تهيئة الذاكرة في Streamlit
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-# عرض المحادثة السابقة
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
-# إدخال المستخدم
 if prompt := st.chat_input("Ask about C++ programming..."):
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
@@ -30,7 +24,6 @@ if prompt := st.chat_input("Ask about C++ programming..."):
 
     st.session_state.messages.append({"role": "assistant", "content": answer})
 
-# عرض عملية التفكير في sidebar (للديمو)
 with st.sidebar:
     st.header("Agent Thought Process")
     st.caption("Check your terminal for detailed ReAct steps (verbose mode)")

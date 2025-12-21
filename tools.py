@@ -15,8 +15,8 @@ vectorstore = FAISS.load_local(
 retriever = vectorstore.as_retriever(
     search_type="similarity_score_threshold",
     search_kwargs={
-        "k": 5,               # Fewer, higher-quality matches
-        "score_threshold": 0.5  # Lower threshold → catches more relevant but slightly varied phrasing
+        "k": 5,               
+        "score_threshold": 0.5  
     }
 )
 
