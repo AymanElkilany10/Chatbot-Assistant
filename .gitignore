@@ -1,0 +1,9 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# FAISS
+faiss_index/
