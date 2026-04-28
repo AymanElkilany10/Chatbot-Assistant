@@ -26,9 +26,13 @@ Each file focuses on one job, which keeps things clean and avoids confusion as t
 The flow is pretty straightforward:
 
 1-The chatbot receives input from the user
+
 2-The agent decides what to do with that input
+
 3-If needed, it calls a specific tool to handle the task
+
 4-The result is returned back to the user in a structured way
+
 
 This approach is based on the idea of AI agents using tools, which is a common pattern in modern AI systems.
 
