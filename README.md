@@ -6,12 +6,19 @@ The idea behind this is to make the project easier to understand, maintain, and 
 
 Chatbot-Assistant/
 │
+
 ├── agent.py        # Handles the main chatbot logic
+
 ├── tools.py        # Contains external tools the agent can use
+
 ├── ingest.py       # Responsible for data processing
+
 ├── app.py          # Entry point to run the application
+
 ├── test_tool.py    # Simple tests for tools
+
 ├── requirements.txt
+
 └── README.md
 
 Each file focuses on one job, which keeps things clean and avoids confusion as the project grows.
