@@ -21,6 +21,8 @@ Chatbot-Assistant/
 
 └── README.md
 
+
+
 Each file focuses on one job, which keeps things clean and avoids confusion as the project grows.
 
 The flow is pretty straightforward:
@@ -34,6 +36,8 @@ The flow is pretty straightforward:
 4-The result is returned back to the user in a structured way
 
 
+
+
 This approach is based on the idea of AI agents using tools, which is a common pattern in modern AI systems.
 
 
@@ -44,6 +48,7 @@ Easy integration with tools
 Simple data ingestion process
 Organized and readable code
 Basic testing included
+
 
 
 Technologies Used:
