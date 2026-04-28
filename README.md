@@ -53,6 +53,9 @@ Technologies Used:
 Working on this project helped me:
 
 Structure Python projects in a clean way
+
 Apply modular design in real code
+
 Understand how AI agents interact with tools
+
 Write code that’s easier to maintain and extend
